@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <centre>
+            <h1 id="head"><b>CALCULATOR</b></h1>
+        </centre>
+        
+       
+    <centre>
+        <table class="calci">
+            <tr>
+                <td colspan="3"> <input class="display-box" type="text" id="evaluate"/> </td>
+             
+                
+                <td> <input type="button" value="C" onclick="CC()" id="btnn" /> </td>
+              </tr>
+        
+            <tr>
+                <td><input type="button" id="btn" value="1" onclick="display('1')" /></td>
+                <td><input type="button" id="btn" value="2" onclick="display('2')" /></td>
+                <td><input type="button" id="btn" value="3" onclick="display('3')" /></td>
+                <td><input type="button" id="btnn" value="+" onclick="display('+')" /></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="btn" value="4" onclick="display('4')" /></td>
+                <td><input type="button" id="btn" value="5" onclick="display('5')" /></td>
+                <td><input type="button" id="btn" value="6" onclick="display('6')" /></td>
+                <td><input type="button" id="btnn" value="-" onclick="display('-')" /></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="btn" value="7" onclick="display('7')" /></td>
+                <td><input type="button" id="btn" value="8" onclick="display('8')" /></td>
+                <td><input type="button" id="btn" value="9" onclick="display('9')" /></td>
+                
+                <td><input type="button" id="btnn" value="*" onclick="display('*')" /></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="btn" value="0" onclick="display('0')" /></td>
+                <td><input type="button" id="btn" value="/" onclick="display('/')" /></td>
+                <td><input type="button" id="btn" value="." onclick="display('.')" /></td>
+                <td><input type="button" id="btnn" value="=" onclick="calculate()" /></td>
+            </tr>
+        
+        </table>
+    </centre>
+    <div id="history">
+        <h3>Calculation History:</h3>
+        <ul id="history-list">
+          <!-- Calculation history will be displayed here -->
+        </ul>
+      </div>
+    <script type="text/javascript" src="eval.js"></script>
+</body>
+
+</html>
